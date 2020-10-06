@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1001 Expressions | Galleries</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googlewebs.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+<style>
+   img{
+     height:23%;
+     width: 23%;
+     margin-left: 1.5%;
+   }
+
+   h1{border-bottom: 2px solid black;}
+
+   #myModal {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myModal:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+   @media screen and (max-width: 768px) {
+
+     img{
+       width:100%;
+       display: block;
+       margin-top: 2vh;}
+     
+   }
+
+   .modal-content {
+    width: 100%;
+  }
+</style>
+
+
+
+
+</head>
+<body>
+    <!--Navbar--> 
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand mx-auto" style="font-size: 1.8em;" href="#">1001Expressions</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto mx-5">
+        <li class="nav-item" style="font-size: 1.2em;">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown" style="font-size: 1.2em;">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Products
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="galleries.html#painting">Painting</a>
+            <a class="dropdown-item" href="galleries.html#murals">Murals</a>
+            <a class="dropdown-item" href="galleries.html#sculpture">Sculpture</a>
+            <a class="dropdown-item" href="galleries.html#digitalpainting">Digital Painting</a>
+          </div>
+        </li>
+        <li class="nav-item" style="font-size: 1.2em;">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        
+        <li class="nav-item active" style="font-size: 1.2em;">
+          <a class="nav-link " href="galleries.html">Galleries <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+      
+    </div>
+  </nav>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div>
+    <div id="painting"></div>
+    <h1 style="text-align:center;">Painting</h1>
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/4029d71d2e7a976936928b8f18b59a98.jpg">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/14a74.jpg">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/6a11.jpg" alt="">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/65d439d3397891c9dd594903fcca7303.jpg" alt="">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/7581256cdde635472905bebab1ad196f.jpg" alt="">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/a4e0df09c90c02a5021836307638bdc7.jpg" alt="">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/ed4f062e86149cee2f6a3bd25c0e3f32.jpg" alt="">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/il_7xx94xN.jpg" alt="">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/IMG_20200704_171411_093.jpg" alt="">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/interior-frame-living-room-with-colorful-white-sofa_46483-429.jpg" alt="">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/kam-idris-_HqHX3LBN18-unsplash.jpg" alt="">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/neonbrand-Wp7t4cWN-68-unsplash.jpg" alt="">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/Normaddfddddddddl post.jpg" alt="">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/Normssaaaal dpost.jpg" alt="">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/paul-weaver-nWidMEQsnAQ-unsplash.jpg" alt="">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/PicsArt_05-31-05.08.28.jpg" alt="">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/PicsArt_06-05-04.55.18.jpg" alt="">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/PicsArt_06-05-05.17.46.jpg" alt="">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/PicsArt_06-07-08.31.53.jpg" alt="">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/PicsArt_06-12-08.41.04.jpg" alt="">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/PicsArt_06-12-09.09.25.jpg" alt="">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/PicsArt_06-12-09.42.06.jpg" alt="">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/PicsArt_06-15-05.12.16.jpg" alt="">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/PicsArt_06-17-02.44.01.jpg" alt="">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/PicsArt_07-07-11.19.07.jpg" alt="">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/PicsArt_07-15-04.18.39.jpg" alt="">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/s.jpg" alt="">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/Screenshot_2020-06-02-14-12-11-311_com.jpg" alt="">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/Screenshot_2020-06-07-10-41ss-22-566_com.instagram.jpg" alt="">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/Screenshot_2020-06-07-21-05-37-301_com.instagram.jpg" alt="">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/Screenshot_2020-06-07-21-06-01-314_com.instagram.jpg" alt="">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/Screenshot_2020-06-08-15-48-49-806_com.instagram.jpg" alt="">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/Screenshot_2020-06-08-15-51-22-166_com.instagram.jpg" alt="">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/Screenshot_2020-06-08-1ss5-48-03-306_com.instagram.jpg" alt="">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/Screenshot_2020-06-15-17-18-58-742_com.instagram.jpg" alt="">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/sidekix-media-Et0zBXKfl0w-unsplash.jpg" alt="">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/sidekix-media-l6u4GIKvxBs-unsplash.jpg" alt="">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/ss1.jpg" alt="">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/UntitlSSSSed-1.jpg" alt="">
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/vinicius-amnx-amano-17NCG_wOkMY-unsplash.jpg" >
+    
+    <br>
+    <br>
+    <hr>
+    <div id="murals"></div>
+    <h1 style="text-align:center;">Murals</h1>
+
+    <img id="myModal" src="images/products/murals/Murals/IMG-20200823-WA0003.jpg" alt="">
+    <img id="myModal" src="images/products/murals/Murals/IMG_20190829_182151.jpg">
+
+    
+    <br>
+    <br>
+    <hr>
+    <div id="sculpture"></div>
+    <h1 style="text-align:center;">Sculpture</h1>
+    <div>
+    <img id="myModal" src="images/products/sculpture/Sculpture-20200927T063909Z-001/Sculpture/,size 14×10×7... Price  30,000.jpg" alt="">
+    <img id="myModal" src="images/products/sculpture/Sculpture-20200927T063909Z-001/Sculpture/5_3.jpg" alt="">
+    <img id="myModal" src="images/products/sculpture/Sculpture-20200927T063909Z-001/Sculpture/FB_IMG_1597657526772.jpg" alt="">
+    <img id="myModal" src="images/products/sculpture/Sculpture-20200927T063909Z-001/Sculpture/IMG-20191230-WA0004.jpg" alt="">
+    <img id="myModal" src="images/products/sculpture/Sculpture-20200927T063909Z-001/Sculpture/IMG_20180426_020421.jpg" alt="">
+    <img id="myModal" src="images/products/sculpture/Sculpture-20200927T063909Z-001/Sculpture/IMG_20180627_101936.jpg" alt="">
+    <img id="myModal" src="images/products/sculpture/Sculpture-20200927T063909Z-001/Sculpture/IMG_20190107_023143.jpg" alt="">
+     
+    <img id="myModal" src="images/products/sculpture/Sculpture-20200927T063909Z-001/Sculpture/IMG_20190107_023148.jpg" alt="">
+     
+    <img id="myModal" src="images/products/sculpture/Sculpture-20200927T063909Z-001/Sculpture/IMG_20190124_050130.jpg" alt="">
+     
+    <img id="myModal" src="images/products/sculpture/Sculpture-20200927T063909Z-001/Sculpture/IMG_20190418_092127.jpg" alt="">
+     
+    <img id="myModal" src="images/products/sculpture/Sculpture-20200927T063909Z-001/Sculpture/IMG_20190418_092141.jpg" alt="">
+     
+    <img id="myModal" src="images/products/sculpture/Sculpture-20200927T063909Z-001/Sculpture/IMG_20190418_092300.jpg" alt="">
+     
+    <img id="myModal" src="images/products/sculpture/Sculpture-20200927T063909Z-001/Sculpture/IMG_20190418_092325.jpg" alt="">
+     
+    <img id="myModal" src="images/products/sculpture/Sculpture-20200927T063909Z-001/Sculpture/IMG_20190418_092400.jpg" alt="">
+     
+    <img id="myModal" src="images/products/sculpture/Sculpture-20200927T063909Z-001/Sculpture/IMG_20190418_092454.jpg" alt="">
+     
+    <img id="myModal" src="images/products/sculpture/Sculpture-20200927T063909Z-001/Sculpture/IMG_20190418_092618.jpg" alt="">
+     
+    <img id="myModal" src="images/products/sculpture/Sculpture-20200927T063909Z-001/Sculpture/size 7×14×25 price. 30,000.jpg" alt="">
+     
+    <img id="myModal" src="images/products/sculpture/Sculpture-20200927T063909Z-001/Sculpture/size 8×11×20inch.. Price 50,000.jpg" alt="">
+     
+    <img id="myModal" src="images/products/sculpture/Sculpture-20200927T063909Z-001/Sculpture/size- 6×7×14 . Price- 30,000.jpg" alt="">
+     
+  </div>
+    <br>
+    <br>
+    <hr>
+    <div id="digitalpainting"></div>
+    <h1 style="text-align: center;">Digital Painting</h1>
+    <img id="myModal" src="images/products/digitalpainting/dg1.jpg" alt="">   
+    <img id="myModal" src="images/products/digitalpainting/dg2.jpg" alt="">
+    <img id="myModal" src="images/products/digitalpainting/dg3.jpg" alt="">
+    <img src="images/products/digitalpainting/dg4.jpg" alt="">
+  
+  <br>
+  <br>
+  
+  <!-- Footer -->
+  <footer class="page-footer font-small grey darken-3">
+
+    <!-- Footer Elements -->
+    <div class="container">
+  
+      <!-- Grid row-->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-12 py-5">
+          <div class="mb-5 flex-center">
+  
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/1001_artvilla-103516828125335/" class="fb-ic">
+              <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic">
+              <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic">
+              <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic">
+              <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic">
+              <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Pinterest-->
+            <a class="pin-ic">
+              <i class="fab fa-whatsapp fa-lg white-text fa-2x"> </i>
+            </a>
+          </div>
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row-->
+  
+    </div>
+    <!-- Footer Elements -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="https://artville.com/"> 1001Expressions.com</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
