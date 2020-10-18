@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,800;1,200&display=swap" rel="stylesheet">
   <!-- Font Awesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 <!-- Google Fonts -->
@@ -18,22 +19,28 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
 
 <style>
-  .carimg{height:100vw;
+  .carimg{
+    margin-top: 75px;
   }
 
   body{background-color: #ebe6d6;}
 
+  #social-media{
+    margin-left: 4.5vw;
+    margin-top: 0%;
+  }
+
   .company-logo{
     height:50px;
-    width:50px;
+    width:90px;
     margin-left: 2vw;
     margin-top: 0%;
     padding: 0%;
   }
   
   .pro_img1{background-image:url("images/products/painting.jpg");
-  height:20vw;
-  width:23vw;
+  height:17vw;
+  width:20vw;
   display: inline-block;
   color: black;
   font-weight: 500;
@@ -45,8 +52,8 @@
 
 
   .pro_img2{background-image:url("images/products/Sculpture .jpg");
-  height:20vw;
-  width:23vw;
+  height:17vw;
+  width:20vw;
   display: inline-block;
   color: black;
   font-weight: 500;
@@ -57,8 +64,8 @@
   }
 
   .pro_img3{background-image:url("images/products/mural.jpg");
-  height:20vw;
-  width:23vw;
+  height:17vw;
+  width:20vw;
   display: inline-block;
   color: black;
   font-weight: 500;
@@ -69,8 +76,8 @@
   }
 
   .pro_img4{background-image:url("images/products/digitalpainting.jpg");
-  height:20vw;
-  width:23vw;
+  height:17vw;
+  width:20vw;
   display: inline-block;
   color: black;
   font-weight: 500;
@@ -80,9 +87,9 @@
   margin-left: 15px;
   }
 
-  .ser_img1{background-image:url("images/homepage/customized.png");
-  height:20vw;
-  width:23vw;
+  .ser_img1{background-image:url("images/homepage/consultant.png");
+  height:17vw;
+  width:20vw;
   display: inline-block;
   color: black;
   font-weight: 500;
@@ -94,7 +101,7 @@
 
 
   .ser_img2{background-image:url("images/homepage/theme_based.png");
-  height:20vw;
+  height:17vw;
   width:23vw;
   display: inline-block;
   color: black;
@@ -105,9 +112,9 @@
   margin-left: 85px;
   }
 
-  .ser_img3{background-image:url("images/homepage/consultant.png");
-  height:20vw;
-  width:23vw;
+  .ser_img3{background-image:url("images/homepage/customized.png");
+  height:17vw;
+  width:20vw;
   display: inline-block;
   color: black;
   font-weight: 500;
@@ -123,7 +130,7 @@
     position:relative;
     top: 0vw;
     left: 0px;
-    font-family: 'lato';
+    font-family: 'Poppins', sans-serif';
   }
 
   .prod{
@@ -133,7 +140,7 @@
     position:relative;
     top: 0vw;
     left: 0px;
-    font-family: 'lato';
+    font-family: 'Poppins', sans-serif';
 
   }
 
@@ -181,12 +188,19 @@
 
   .ph-ict,.ph-ic{display: inline-block;}
   
+  .car-text{
+    text-shadow: #020202;
+  }
+
+
+
+
   @media screen and (max-width:800px){
 
   .pro_img1, .pro_img2,.pro_img3,.pro_img4{
     display: block;
-    width:80vw;
-    height: 80vw;
+    width:60vw;
+    height: 60vw;
     margin-bottom: 2vw;
     margin-left: 10vw;
   }
@@ -207,7 +221,7 @@
     position:relative;
     top: 0vw;
     left: 0px;
-    font-family: 'lato';
+    font-family: 'Poppins', sans-serif';
   }
 
   .prod{
@@ -216,13 +230,53 @@
     position:relative;
     top: 0vw;
     left: 0px;
-    font-family: 'lato';
+    font-family: 'Poppins', sans-serif';
 
   }
 
-  .wa-ic, .wa-ict, .ph-ic, .ph-ict{display: none;}
+  .wa-ic{position:fixed;
+  bottom:200px;
+  right:20px;
+  z-index:1;
+  opacity: 0.3;
+  }
 
+.wa-ic:hover, .ph-ic:hover{
+  opacity: 1;
+}
+  .wa-ict{
+    background-color:#616161;
+    width: 100px;
+    font-size: medium;
+    text-align: center;
+    color: beige;
+    border-radius: 20px 20px 20px 20px;
+    z-index: 1;
+  }
+
+  .wa-ict,.wa-ic{display: inline-block;}
+
+  .ph-ic{
+    position: fixed;
+    bottom:75px;
+    right:20px;
+    z-index: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    opacity: 0.3;
+  }
+
+  .ph-ict{
+    background-color: #616161;
+    width: 100px;
+    font-size: medium;
+    text-align: center;
+    color: beige;
+    border-radius: 20px 20px 20px 20px;
+    z-index: 1;
   } 
+
+  }
 </style>
 
 </head>
@@ -230,7 +284,7 @@
 
 <!--Navbar-->  
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
-  <a class="navbar-brand mx-auto" style="font-size: 1.8em;" href="index.html"><img class="company-logo" src="images/logoblack1.jpg">1001impressions</a>
+  <a class="navbar-brand mx-auto" style="font-size: 1.8em;" href="index.html"><img class="company-logo" src="images/logoblack1.jpg">&nbsp;Artvilla</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
   <span class="navbar-toggler-icon"></span>
   </button>
@@ -251,11 +305,11 @@
         </div>
       </li>
       <li class="nav-item" style="font-size: 1.2em;">
-        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#page-footer">Contact</a>
       </li>
       
       <li class="nav-item" style="font-size: 1.2em;">
-        <a class="nav-link" href="galleries.html">Galleries</a>
+        <a class="nav-link" href="galleries.html">Collection</a>
       </li>
     </ul>
     
@@ -269,31 +323,23 @@
       <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
       <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
       <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="images/homepage/car1.JPG" class="carimg d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h1>Unique.Modern.Expressive</h1>
-        </div>
+        <img src="images/homepage/1.JPG" class="carimg d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="images/homepage/car2.jpg" class="carimg d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h1>Unique.Modern.Expressive</h1>
-        </div>
+        <img src="images/homepage/2.jpg" class="carimg d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="images/homepage/car3.jpg" class="carimg d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h1>Unique.Modern.Expressive</h1>
-        </div>
+        <img src="images/homepage/3.jpg" class="carimg d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="images/homepage/car4.jpg" class="carimg d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h1>Unique.Modern.Expressive</h1>
-        </div>
+        <img src="images/homepage/4.jpg" class="carimg d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/homepage/5.jpg" class="carimg d-block w-100" alt="...">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
@@ -306,16 +352,18 @@
     </a>
   </div>
   <br>
+  <br>
+  <br>
+  <div class="container">
   <div id="about"> </div>
   <!--Carousel Ended-->
   <h1 style="text-align: center; font-weight: 700;">About Us</h1>
-  <br>
-  <h4 style="text-align: center; background-color: #ebe6d6; line-height: 7vh;"> <span style="font-weight: 1000;"> <i>We create Modern Art for Modern Interiors</i> </span><br> We are a Team of Youthful and Dynamic Artists & Designers who create Modern Contemporary Art for diverse Interiors and Spaces. Our Art is  Unique, Expressive and Modern. artvilla is all about  providing unique and custom experience . Art is an expression and we help you express it through our services </h4>
+  <h4 style="text-align: center; background-color: #ebe6d6; line-height: 6vh;"> <span style="font-weight: 1000;"> We create Modern Art for Modern Interiors </span><br><br> We are a Team of Youthful and Dynamic Artists & Designers who create Modern Contemporary Art for diverse Interiors and Spaces. Our Art is  Unique, Expressive and Modern. 1001Artvilla is all about  providing unique and custom experience . Art is an expression and we help you express it through our services </h4>
   <br>
 <br>
 <hr>  
 
-<!--Whatsapp floating Button-->
+<!--Whatsapp floating Button Desktop-->
 
 
 <a href="tel:+91-9810396016" class="ph-ic">
@@ -350,11 +398,11 @@
   </div></a>
   <br>
   <br>
-  <br>
   <hr>
-  <h1 style="text-align: center; font-weight: 700">Why Us</h1>
   <br>
-  <h4 style="text-align: center; background-color: #ebe6d6; line-height: 7vh;"> <span style="font-weight: 1000;"><i>We exist so you can have the art you love.</i> </span><br> Frankly, it's not about us, it's about the relationship between you and your art, we are just here to strengthen it. Imagine having exactly the kind of piece you desire, the artists at Artvilla are all ears, they carefully listen and understand what precisely you crave and personally keep you updated at all times with the progress of your artwork. At Artvilla, it's not a transaction, it's a feeling. </h4>
+  <br>  
+  <h1 style="text-align: center; font-weight: 700">Why Us</h1>
+  <h4 style="text-align: center; background-color: #ebe6d6; line-height: 6vh;"> <span style="font-weight: 1000;">We exist so you can have the art you love. </span><br><br> Frankly, it's not about us, it's about the relationship between you and your art, we are just here to strengthen it. Imagine having exactly the kind of piece you desire, the artists at 1001Artvilla are all ears, they carefully listen and understand what precisely you crave and personally keep you updated at all times with the progress of your artwork. At 1001Artvilla, it's not a transaction, it's a feeling. </h4>
   
 
   <!--Services Category-->
@@ -365,33 +413,31 @@
   <h1 style="text-align: center; font-weight: 700"> Services </h1>
   <br>
   <div class="ser_img1">
-    <p>Art Consultant</p>
+    <p style="position:relative; left:-20px;">Art Consultant</p>
   </div>
-  <div class="ser_img2">
+  <div class="ser_img2" >
     <p> Theme Based Works</p>
   </div>
   
   <div class="ser_img3">
-    <p>Customization</p>
+    <p style="position:relative; left:-15px;">Customization</p>
   </div>
-  
+</div>
 <br>
 <br>
 <br>
 
     <!-- Footer -->
     <footer class="page-footer font-small black darken-0">
-
         <!-- Footer Elements -->
         <div class="container">
       
           <!-- Grid row-->
           <div class="row">
-      
             <!-- Grid column -->
             <div class="col-md-12 py-5">
-              <div class="mb-5 flex-center">
-      
+              <p style="background-color: #020202; text-align: center; font-size:  x-large; margin-bottom: 0px;">Follow Us</p>
+              <div class="mb-5 flex-center" id="social-media">
                 <!-- Facebook -->
                 <a href="https://www.facebook.com/1001_artvilla-103516828125335/" class="fb-ic">
                   <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
@@ -408,7 +454,7 @@
                 <a href="https://www.instagram.com/1001_artvilla/" class="ins-ic">
                   <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
                 </a>
-                
+                 
               </div>
             </div>
             <!-- Grid column -->
@@ -419,12 +465,12 @@
         </div>
         <!-- Footer Elements -->
 
-        <p style="background-color: #020202; text-align: center; font-size:  x-large;">Contact Us</p>
-        <p style="background-color: #020202; text-align: center; font-size: large;">+91-9810396016 <br> xyz@1001impressions.com</p>
+        <p id="page-footer" style="background-color: #020202; text-align: center; font-size:  x-large;">Contact Us</p>
+        <p style="background-color: #020202; text-align: center; font-size: large;">+91-9810396016 <br> 1001Artvilla@gmail.com</p>
       
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3">© 2020 Copyright:
-          <a href="https://artville.com/"> 1001impressions.com</a>
+          <a href="https://artville.com/"> 1001Artvilla.com</a>
         </div>
         <!-- Copyright -->
       

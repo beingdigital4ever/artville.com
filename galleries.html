@@ -25,9 +25,14 @@
     background-color: #ebe6d6;
   }
 
+  #social-media{
+    margin-left: 4.5vw;
+    margin-top: 0%;
+  }
+
    .company-logo{
     height:50px;
-    width:50px;
+    width:90px;
     margin-left: 2vw;
     margin-top: 0%;
     padding: 0%;
@@ -45,7 +50,60 @@
   margin-top: 2vw;
 }
 
+#myModal {
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
 #myModal:hover {opacity: 0.7;}
+
+.wa-ic{position:fixed;
+  bottom:200px;
+  right:20px;
+  z-index:1;
+  opacity: 0.3;
+  }
+
+.wa-ic:hover, .ph-ic:hover{
+  opacity: 1;
+}
+  .wa-ict{
+    background-color:#616161;
+    width: 200px;
+    font-size: 25px;
+    text-align: center;
+    color: beige;
+    border-radius: 20px 20px 20px 20px;
+    z-index: 1;
+  }
+
+  .wa-ict,.wa-ic{display: inline-block;}
+
+  .ph-ic{
+    position: fixed;
+    bottom:75px;
+    right:20px;
+    z-index: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    opacity: 0.3;
+  }
+
+  .ph-ict{
+    background-color: #616161;
+    width: 200px;
+    font-size: 25px;
+    text-align: center;
+    color: beige;
+    border-radius: 20px 20px 20px 20px;
+    z-index: 1;
+    
+  }
+
+  .ph-ict,.ph-ic{display: inline-block;}
+  
+p{font-family: lato;}
 
 nav{background-color: #020202;}
 
@@ -68,14 +126,14 @@ nav{background-color: #020202;}
     <!--Navbar--> 
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
-      <a class="navbar-brand mx-auto" style="font-size: 1.8em;" href="index.html"><img class="company-logo" src="images/logoblack1.jpg">1001impressions</a>
+      <a class="navbar-brand mx-auto" style="font-size: 1.8em;" href="index.html"><img class="company-logo" src="images/logoblack1.jpg">&nbsp;Artvilla</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto mx-5">
-          <li class="nav-item active" style="font-size: 1.2em;">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span> </a>
+          <li class="nav-item " style="font-size: 1.2em;">
+            <a class="nav-link" href="index.html">Home </a>
           </li>
           <li class="nav-item dropdown" style="font-size: 1.2em;">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -89,16 +147,31 @@ nav{background-color: #020202;}
             </div>
           </li>
           <li class="nav-item" style="font-size: 1.2em;">
-            <a class="nav-link" href="index.html#about">About</a>
+            <a class="nav-link" href="#page-footer">Contact</a>
           </li>
           
-          <li class="nav-item" style="font-size: 1.2em;">
-            <a class="nav-link" href="galleries.html">Galleries</a>
+          <li class="nav-item active" style="font-size: 1.2em;">
+            <a class="nav-link" href="galleries.html">Collection <span class="sr-only">(current)</span></a>
           </li>
         </ul>
         
       </div>
     </nav>
+
+  <!--Whatsapp floating Button-->
+
+
+<a href="tel:+91-9810396016" class="ph-ic">
+  <p class="ph-ict">Call Us</p>
+  <i class="fa fa-phone fa-lg blue-text fa-3x"> </i>
+</a>
+
+
+<a href="https://wa.me/message/QATIDS4D4Q5PB1" class="wa-ic">
+  <p class="wa-ict">Whatsapp Us</p>
+  <i class="fab fa-whatsapp fa-lg green-text fa-4x"> </i>
+</a>
+
   <br>
   <br>
   <br>
@@ -107,6 +180,12 @@ nav{background-color: #020202;}
     <div id="painting"></div>
     <h1 style="text-align:center;">Painting</h1>
     <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/important/196ff8d4db6d02848b7c25f1222964195.jpg">
+
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/important/17-10-20.jpg">
+
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/important/17-10-2020.jpg">
+
+    <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/important/17-10-20_pic3.jpg">
 
     <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/important/Gold Canvas Art,Black White Painting,Large Abstract Painting, Horizontal Wall Art,Handmade Large Wall Art,Wall Decor Art, .jpg">
 
@@ -159,7 +238,6 @@ nav{background-color: #020202;}
     <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/sidekix-media-Et0zBXKfl0w-unsplash.jpg" alt="">
     <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/sidekix-media-l6u4GIKvxBs-unsplash.jpg" alt="">
     <img id = "myModal" src="images/products/painting/Painting-20200927T063712Z-001/Painting/vinicius-amnx-amano-17NCG_wOkMY-unsplash.jpg" >
-    
     <br>
     <br>
     <hr>
@@ -230,27 +308,25 @@ nav{background-color: #020202;}
   
         <!-- Grid column -->
         <div class="col-md-12 py-5">
-          <div class="mb-5 flex-center">
+          <p style="background-color: #020202; text-align: center; font-size:  x-large; margin-bottom: 0px;">Follow Us</p>
+          <div id="social-media" class="mb-5 flex-center">
   
             <!-- Facebook -->
             <a href="https://www.facebook.com/1001_artvilla-103516828125335/" class="fb-ic">
               <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
             </a>
-            <!-- Twitter -->
-            
             <!-- Google +-->
-            <a class="gplus-ic">
+            <a href="mailto:1001artvilla@gmail.com" class="gplus-ic">
               <i class="fas fa-envelope fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
             </a>
             <!--Linkedin -->
-            <a class="li-ic">
+            <a href="https://www.linkedin.com/company/1001-artvilla" class="li-ic">
               <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
             </a>
             <!--Instagram-->
-            <a class="ins-ic">
+            <a href="https://www.instagram.com/1001_artvilla/" class="ins-ic">
               <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-            </a>
-            <!--Pinterest-->
+            </a> 
             
           </div>
         </div>
@@ -262,12 +338,12 @@ nav{background-color: #020202;}
     </div>
     <!-- Footer Elements -->
 
-    <p style="background-color: #020202; text-align: center; font-size:  x-large;">Contact Us</p>
+    <p id="page-footer" style="background-color: #020202; text-align: center; font-size:  x-large;">Contact Us</p>
         <p style="background-color: #020202; text-align: center; font-size: large;">+91-9810396016 <br> xyz@1001impressions.com</p>
   
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      <a href="https://artville.com/"> 1001impressions.com</a>
+      <a href="https://1001artvilla.com/"> 1001Artvilla.com</a>
     </div>
     <!-- Copyright -->
   
@@ -275,5 +351,6 @@ nav{background-color: #020202;}
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
 </body>
 </html>
